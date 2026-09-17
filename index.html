@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allure Makeup Studio | Luxury Beauty Salon in Punjab Society, Lahore</title>
+  <meta name="description" content="Allure Makeup Studio - Premium Bridal, Dulhan, Walima & Party Makeup Studio in Punjab Housing Society, Lahore. Contact: 03220262418.">
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Image Server Optimization -->
+  <link rel="preconnect" href="https://i.postimg.cc">
+  <link rel="dns-prefetch" href="https://i.postimg.cc">
+
+  <style>
+    /* CSS RESET & VARIABLES */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --bg-dark: #0a050d;
+      --bg-card: #140b18;
+      --bg-card-hover: #1f1225;
+      --pink-main: #f0a8bd;
+      --pink-glow: #e07a98;
+      --gold-accent: #e6be75;
+      --text-white: #ffffff;
+      --text-muted: #d1c2d6;
+      --border-color: rgba(230, 190, 117, 0.3);
+      --border-pink: rgba(240, 168, 189, 0.35);
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Montserrat', -apple-system, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-body);
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* TYPOGRAPHY OVERRIDES */
+    h1, h2, h3, .nav-logo-text, .package-title {
+      font-family: var(--font-heading);
+    }
+
+    /* TOP BAR / QUICK ACTION BUTTONS */
+    .top-action-bar {
+      background: linear-gradient(90deg, #180922 0%, #2b0d32 50%, #180922 100%);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .top-bar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .top-brand-mini {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-brand-mini img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--gold-accent);
+      object-fit: cover;
+    }
+
+    .top-brand-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      font-family: var(--font-heading);
+    }
+
+    .top-quick-buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .top-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .top-btn-wa {
+      background: #25d366;
+      color: #000000;
+      box-shadow: 0 0 10px rgba(37, 211, 102, 0.3);
+    }
+
+    .top-btn-insta {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(220, 39, 67, 0.3);
+    }
+
+    .top-btn-tiktok {
+      background: #000000;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    /* MAIN NAVBAR */
+    .main-header {
+      background: rgba(15, 8, 20, 0.95);
+      border-bottom: 1px solid var(--border-pink);
+      padding: 12px 20px;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-group img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-accent);
+      object-fit: cover;
+    }
+
+    .nav-logo-text {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      background: linear-gradient(135deg, #ffffff 0%, var(--pink-main) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--pink-main);
+    }
+
+    /* LAYOUT CONTAINERS */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-padding {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 2.3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-white);
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 span {
+      color: var(--pink-main);
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .gold-divider {
+      height: 3px;
+      width: 60px;
+      background: linear-gradient(90deg, var(--gold-accent), var(--pink-main));
+      margin: 12px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 60px 0 80px 0;
+      background: radial-gradient(circle at 50% 30%, rgba(224, 122, 152, 0.18) 0%, rgba(10, 5, 13, 1) 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(230, 190, 117, 0.12);
+      border: 1px solid var(--gold-accent);
+      color: var(--gold-accent);
+      border-radius: 30px;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .hero-text h1 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+
+    .hero-text h1 span {
+      background: linear-gradient(135deg, var(--pink-main) 0%, var(--gold-accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--pink-glow) 0%, var(--pink-main) 100%);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(224, 122, 152, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(224, 122, 152, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-white);
+      border: 1px solid var(--border-color);
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.2s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(230, 190, 117, 0.15);
+      transform: translateY(-3px);
+    }
+
+    .hero-img-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid var(--border-color);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-img-wrapper img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    /* ABOUT US SECTION */
+    .about-section {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-img-frame {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid var(--border-pink);
+    }
+
+    .about-img-frame img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .about-content h3 {
+      font-size: 1.8rem;
+      color: var(--pink-main);
+      margin-bottom: 15px;
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    /* SERVICES SECTION */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--pink-main);
+      background: var(--bg-card-hover);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-btn {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background: transparent;
+      border: 1px solid var(--pink-main);
+      color: var(--pink-main);
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .service-card:hover .service-btn {
+      background: var(--pink-main);
+      color: var(--bg-dark);
+    }
+
+    /* BRIDAL SPECIAL SECTION */
+    .bridal-special-section {
+      background: linear-gradient(180deg, rgba(20, 11, 24, 1) 0%, rgba(35, 15, 38, 1) 100%);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .bridal-box {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+      background: rgba(10, 5, 13, 0.7);
+      border: 2px solid var(--gold-accent);
+      border-radius: 24px;
+      padding: 35px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .bridal-img-wrapper {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-pink);
+    }
+
+    .bridal-img-wrapper img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .bridal-info h3 {
+      font-size: 2.1rem;
+      color: var(--gold-accent);
+      margin-bottom: 15px;
+    }
+
+    .bridal-info p {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 1rem;
+    }
+
+    /* PACKAGES & PRICING */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .package-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 30px 24px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .package-card.featured {
+      border: 2px solid var(--gold-accent);
+      background: linear-gradient(180deg, #1f1127 0%, #130a18 100%);
+      box-shadow: 0 0 20px rgba(230, 190, 117, 0.25);
+    }
+
+    .package-badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--gold-accent);
+      color: #000;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .package-title {
+      font-size: 1.6rem;
+      color: var(--pink-main);
+      margin-bottom: 15px;
+    }
+
+    .package-features {
+      list-style: none;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .package-features li {
+      color: var(--text-muted);
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 320px;
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, transparent 60%);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      opacity: 0.9;
+    }
+
+    .gallery-label {
+      color: var(--gold-accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gallery-title {
+      color: var(--text-white);
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-family: var(--font-heading);
+    }
+
+    /* REVIEWS */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-pink);
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .review-stars {
+      color: var(--gold-accent);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .review-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 18px;
+    }
+
+    .review-author {
+      font-weight: 700;
+      color: var(--pink-main);
+    }
+
+    /* LOCATION SECTION */
+    .location-section {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .map-box {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid var(--border-color);
+      height: 380px;
+      background: #000;
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .location-info h3 {
+      font-size: 1.8rem;
+      color: var(--gold-accent);
+      margin-bottom: 15px;
+    }
+
+    .location-info p {
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    /* BOOKING & HIGH-CONTRAST FORM FIXES */
+    .booking-card {
+      max-width: 750px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--pink-main);
+      font-weight: 600;
+    }
+
+    /* Form Controls Contrast Fix */
+    .form-control {
+      background-color: #1f1225 !important;
+      border: 1.5px solid var(--border-pink) !important;
+      border-radius: 8px;
+      padding: 12px;
+      color: #ffffff !important;
+      font-size: 0.95rem;
+      font-family: var(--font-body);
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-accent) !important;
+      box-shadow: 0 0 8px rgba(230, 190, 117, 0.3);
+    }
+
+    select.form-control option {
+      background-color: #150b18 !important;
+      color: #ffffff !important;
+      padding: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #050207;
+      border-top: 1px solid var(--border-color);
+      padding: 50px 0 20px 0;
+      text-align: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .footer-logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-accent);
+      object-fit: cover;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.5rem;
+      color: var(--pink-main);
+      letter-spacing: 2px;
+    }
+
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .copyright {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
+    }
+
+    /* LIGHTBOX MODAL */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0, 0, 0, 0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: 12px;
+      border: 2px solid var(--gold-accent);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media (max-width: 768px) {
+      .hero-grid, .about-grid, .bridal-box, .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full-width {
+        grid-column: span 1;
+      }
+
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .top-bar-container {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP ACTION BAR -->
+  <div class="top-action-bar">
+    <div class="top-bar-container">
+      <div class="top-brand-mini">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" decoding="async">
+        <span class="top-brand-title">Allure Studio</span>
+      </div>
+      <div class="top-quick-buttons">
+        <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20inquire%20about%20booking." target="_blank" class="top-btn top-btn-wa">
+          <span>💬 WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" class="top-btn top-btn-insta">
+          <span>📸 Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@alluremakeupstudio5?_r=1&_d=f3854841a4dde3&sec_uid=MS4wLjABAAAACjKKfPFJhZ7Be_YIOBIJAutpS4iUcW9jkOAsMNEYosMX7ZWHZ6csb9-Fxec_EKAs&share_author_id=7588433932183700498&sharer_language=en&source=h5_m&u_code=egk3b4557aac13&item_author_type=2&utm_source=whatsapp_business&share_enter_from=others_homepage&tt_from=whatsapp_business&enable_checksum=1&utm_medium=ios&share_link_id=39824AC2-2C2C-4616-A742-D44A3E4BD8C4&user_id=7426343676450292737&sec_user_id=MS4wLjABAAAA-D4DlhcckdP-WSNB3zEhDBw_Tcrp6KYRPRq8U07-Auy-3eV1Jg5DZH-noMGb_2Re&utm_campaign=client_share&panel_source_v2=share_panel&ug_btm=b6880,b5836&social_share_type=5&share_app_id=1233" target="_blank" class="top-btn top-btn-tiktok">
+          <span>🎵 TikTok</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="main-header">
+    <div class="nav-container">
+      <div class="nav-logo-group">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" decoding="async">
+        <div class="nav-logo-text">ALLURE MAKEUP STUDIO</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#bridal">Bridal</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#booking">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge">Punjab Housing Society, Lahore</span>
+          <h1>ELEGANCE & <span>ROYAL GLAMOUR</span></h1>
+          <p>Experience high-end professional beauty transformations. Specializing in Bridal, Dulhan, Engagement, Walima, and Luxury Party Makeups.</p>
+          <div class="hero-cta-group">
+            <a href="#booking" class="btn-primary">Book Appointment</a>
+            <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-secondary">Direct WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <div class="hero-img-wrapper">
+            <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Professional Beauty Parlor Makeup Showcase" fetchpriority="high" loading="eager" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="about-section section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-frame">
+          <img src="https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg" alt="Timeless Beauty Salon Ambience" loading="lazy" decoding="async">
+        </div>
+        <div class="about-content">
+          <div class="section-title" style="text-align: left;">
+            <h2>ABOUT <span>ALLURE STUDIO</span></h2>
+            <div class="gold-divider" style="margin-left: 0;"></div>
+          </div>
+          <h3>Crafting Timeless Beauty</h3>
+          <p>At <strong>Allure Makeup Studio</strong>, we are dedicated to providing a luxurious beauty experience for every client. Located in Punjab Housing Society, Lahore, our salon blends modern aesthetics with traditional elegance.</p>
+          <p>From modern HD airbrush bridal looks to soft glam party makeups and premium skincare routines, we use top-tier global beauty products to ensure you look flawless on your special day.</p>
+          <a href="#booking" class="btn-primary" style="margin-top: 10px;">Visit Us Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>OUR <span>SERVICES</span></h2>
+        <p>Premium beauty treatments tailored specifically for you</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">👰</div>
+          <h3>Bridal Makeup</h3>
+          <p>Complete luxury HD bridal makeup with hairstyle, jewelry, and dupatta setting.</p>
+          <button onclick="bookService('Bridal Makeup')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👑</div>
+          <h3>Dulhan Makeup</h3>
+          <p>Traditional royal barat bridal transformation with long-lasting flawless finish.</p>
+          <button onclick="bookService('Dulhan Makeup')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Walima Makeup</h3>
+          <p>Soft pastel elegance with high-definition glow finish for your Walima event.</p>
+          <button onclick="bookService('Walima Makeup')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💍</div>
+          <h3>Engagement Makeup</h3>
+          <p>Subtle, modern, and glowing makeup tailored for engagement & ring ceremony.</p>
+          <button onclick="bookService('Engagement Makeup')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💄</div>
+          <h3>Party Makeup</h3>
+          <p>Glamorous party looks with custom eye makeup, lashes, and hair styling.</p>
+          <button onclick="bookService('Party Makeup')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💇‍♀️</div>
+          <h3>Hair Styling</h3>
+          <p>Modern bridal updos, romantic curls, braids, and signature hair transformations.</p>
+          <button onclick="bookService('Hair Styling')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🌸</div>
+          <h3>Skin Care & Glow</h3>
+          <p>Deep cleansing facials, hydra-glow treatments, and skin prep for brides.</p>
+          <button onclick="bookService('Skin Care')" class="service-btn">Book Service</button>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💅</div>
+          <h3>Other Beauty Services</h3>
+          <p>Manicure, pedicure, waxing, threading, and customized beauty packages.</p>
+          <button onclick="bookService('Other Beauty Services')" class="service-btn">Book Service</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDAL SPECIAL SECTION -->
+  <section id="bridal" class="bridal-special-section section-padding">
+    <div class="container">
+      <div class="bridal-box">
+        <div class="bridal-img-wrapper">
+          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Signature Red Dulhan Bridal Makeup" loading="lazy" decoding="async">
+        </div>
+        <div class="bridal-info">
+          <h3>SIGNATURE BRIDAL & DULHAN GLAM</h3>
+          <p>Your wedding day deserves nothing less than perfection. Our signature Dulhan package combines HD airbrush techniques, customized mink lashes, skin glow treatments, and expert hairstyle setting to ensure you feel like royalty.</p>
+          <a href="https://wa.me/923220262418?text=Hello%20Allure%20Studio,%20I%20want%20to%20inquire%20about%20Bridal%20Consultation." target="_blank" class="btn-primary">Inquire via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES & PRICING -->
+  <section id="packages" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>LUXURY <span>PACKAGES</span></h2>
+        <p>Curated service packages for every memorable occasion</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3 class="package-title">Party Glam Package</h3>
+          <ul class="package-features">
+            <li>✔ Signature HD Makeup</li>
+            <li>✔ Premium Lashes</li>
+            <li>✔ Custom Hairstyle</li>
+            <li>✔ Dupatta & Accessory Setting</li>
+          </ul>
+          <button onclick="bookService('Party Glam Package')" class="btn-primary" style="width: 100%;">Book Package</button>
+        </div>
+        <div class="package-card featured">
+          <span class="package-badge">Most Popular</span>
+          <h3 class="package-title">Signature Dulhan Package</h3>
+          <ul class="package-features">
+            <li>✔ High Definition Barat Makeup</li>
+            <li>✔ Royal Hair Design</li>
+            <li>✔ Pre-Bridal Skin Prep</li>
+            <li>✔ Complete Jewelry & Dupatta Setting</li>
+            <li>✔ Free Touch-up Kit</li>
+          </ul>
+          <button onclick="bookService('Signature Dulhan Package')" class="btn-primary" style="width: 100%;">Book Package</button>
+        </div>
+        <div class="package-card">
+          <h3 class="package-title">Walima / Engagement</h3>
+          <ul class="package-features">
+            <li>✔ Soft Glow Pastel Makeup</li>
+            <li>✔ Luxury Lash Application</li>
+            <li>✔ Romantic Updo Hair Styling</li>
+            <li>✔ Dupatta & Crown Setting</li>
+          </ul>
+          <button onclick="bookService('Walima/Engagement Package')" class="btn-primary" style="width: 100%;">Book Package</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="section-padding" style="background: var(--bg-card);">
+    <div class="container">
+      <div class="section-title">
+        <h2>STUDIO <span>GALLERY</span></h2>
+        <p>Explore transformations crafted at Allure Makeup Studio</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg')">
+          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Signature Dulhan" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">BARAT GLAM</div>
+              <div class="gallery-title">Signature Barat Dulhan</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Bridal Glam" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">BRIDAL</div>
+              <div class="gallery-title">Luxury Bridal Look</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/3r2Mr7Vp/Whats-App-Image-2026-09-17-at-10-28-11-PM.jpg')">
+          <img src="https://i.postimg.cc/3r2Mr7Vp/Whats-App-Image-2026-09-17-at-10-28-11-PM.jpg" alt="Walima Bride" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">WALIMA</div>
+              <div class="gallery-title">Royal Walima Elegance</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg')">
+          <img src="https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg" alt="Engagement Glam" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">ENGAGEMENT</div>
+              <div class="gallery-title">Engagement Glow</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/nhrWqjGc/Whats-App-Image-2026-09-17-at-4-02-40-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/nhrWqjGc/Whats-App-Image-2026-09-17-at-4-02-40-PM-(1).jpg" alt="Party Makeup" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">PARTY GLAM</div>
+              <div class="gallery-title">Soft Glam Party Look</div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/9f7CtNYH/Whats-App-Image-2026-09-17-at-4-02-39-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/9f7CtNYH/Whats-App-Image-2026-09-17-at-4-02-39-PM-(1).jpg" alt="Studio Showcase" loading="lazy" decoding="async">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">PORTFOLIO</div>
+              <div class="gallery-title">Studio Detail Portfolio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section id="reviews" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>CLIENT <span>REVIEWS</span></h2>
+        <p>What our gorgeous brides have to say</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My Barat look was beyond my expectations! Everyone at the hall complimented my makeup. Thank you Allure Studio!"</p>
+          <div class="review-author">- Ayesha Khan</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Best makeup studio in Punjab Society! The soft glam party makeup stayed flawless all night long."</p>
+          <div class="review-author">- Fatima Zahra</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Very professional staff and comfortable studio environment. Highly recommended for Walima brides."</p>
+          <div class="review-author">- Mahnoor Malik</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION -->
+  <section id="location" class="location-section section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>VISIT <span>OUR STUDIO</span></h2>
+        <p>Punjab Housing Society, Ghazi Road, Lahore</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="location-grid">
+        <div class="map-box">
+          <iframe src="https://maps.google.com/maps?q=Punjab%20Housing%20Society%20Lahore&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="location-info">
+          <h3>LOCATION DETAILS</h3>
+          <p><strong>Studio Address:</strong> Punjab Housing Society, Ghazi Road, Lahore, Punjab, Pakistan.</p>
+          <p><strong>Phone / WhatsApp:</strong> 03220262418</p>
+          <p><strong>Timing:</strong> Open 7 Days a Week (11:00 AM - 8:00 PM)</p>
+          <a href="https://maps.app.goo.gl/3gqcwCBCBekL1VaT7?g_st=ac" target="_blank" class="btn-primary" style="margin-top: 15px;">
+            📍 Open Direct Location Link
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section id="booking" class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>BOOK YOUR <span>APPOINTMENT</span></h2>
+        <p>Fill in details to generate direct WhatsApp booking</p>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="booking-card">
+        <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="custName" class="form-control" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="03XXXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label>Date of Event</label>
+              <input type="date" id="custDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label>Service Required</label>
+              <select id="custService" class="form-control" required>
+                <option value="Bridal Makeup">Bridal Makeup</option>
+                <option value="Dulhan Makeup">Dulhan Makeup</option>
+                <option value="Walima Makeup">Walima Makeup</option>
+                <option value="Engagement Makeup">Engagement Makeup</option>
+                <option value="Party Makeup">Party Makeup</option>
+                <option value="Hair Styling">Hair Styling</option>
+                <option value="Skin Care Treatment">Skin Care Treatment</option>
+                <option value="Other Service">Other Beauty Service</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label>Number of People</label>
+              <input type="number" id="custPeople" class="form-control" placeholder="1" min="1" value="1">
+            </div>
+            <div class="form-group full-width">
+              <label>Additional Message / Details</label>
+              <textarea id="custMsg" class="form-control" rows="3" placeholder="Mention timing preference or special requirements..."></textarea>
+            </div>
+            <div class="form-group full-width" style="margin-top: 10px;">
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                💬 Submit & Send via WhatsApp
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" loading="lazy" decoding="async">
+        <h3>ALLURE MAKEUP STUDIO</h3>
+      </div>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">Punjab Housing Society, Ghazi Road, Lahore | Contact: 03220262418</p>
+      
+      <div class="footer-socials">
+        <a href="https://wa.me/923220262418" target="_blank" class="top-btn top-btn-wa">WhatsApp</a>
+        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" class="top-btn top-btn-insta">Instagram</a>
+        <a href="https://www.tiktok.com/@alluremakeupstudio5?_r=1&_d=f3854841a4dde3&sec_uid=MS4wLjABAAAACjKKfPFJhZ7Be_YIOBIJAutpS4iUcW9jkOAsMNEYosMX7ZWHZ6csb9-Fxec_EKAs&share_author_id=7588433932183700498&sharer_language=en&source=h5_m&u_code=egk3b4557aac13&item_author_type=2&utm_source=whatsapp_business&share_enter_from=others_homepage&tt_from=whatsapp_business&enable_checksum=1&utm_medium=ios&share_link_id=39824AC2-2C2C-4616-A742-D44A3E4BD8C4&user_id=7426343676450292737&sec_user_id=MS4wLjABAAAA-D4DlhcckdP-WSNB3zEhDBw_Tcrp6KYRPRq8U07-Auy-3eV1Jg5DZH-noMGb_2Re&utm_campaign=client_share&panel_source_v2=share_panel&ug_btm=b6880,b5836&social_share_type=5&share_app_id=1233" target="_blank" class="top-btn top-btn-tiktok">TikTok</a>
+      </div>
+
+      <div class="copyright">
+        &copy; Allure Makeup Studio. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightboxImg" class="lightbox-content" src="" alt="Gallery Preview">
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    function bookService(serviceName) {
+      document.getElementById('custService').value = serviceName;
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxModal').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').style.display = 'none';
+    }
+
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+      
+      var name = document.getElementById('custName').value;
+      var phone = document.getElementById('custPhone').value;
+      var date = document.getElementById('custDate').value;
+      var service = document.getElementById('custService').value;
+      var people = document.getElementById('custPeople').value;
+      var msg = document.getElementById('custMsg').value;
+
+      var text = "✨ *NEW BOOKING INQUIRY - ALLURE MAKEUP STUDIO* ✨%0A%0A" +
+                 "*Name:* " + encodeURIComponent(name) + "%0A" +
+                 "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+                 "*Date of Event:* " + encodeURIComponent(date) + "%0A" +
+                 "*Service Required:* " + encodeURIComponent(service) + "%0A" +
+                 "*Number of Persons:* " + encodeURIComponent(people) + "%0A" +
+                 "*Message:* " + encodeURIComponent(msg || "N/A");
+
+      var waNum = "923220262418";
+      var waUrl = "https://wa.me/" + waNum + "?text=" + text;
+
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
