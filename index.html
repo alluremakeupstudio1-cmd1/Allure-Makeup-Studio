@@ -6,17 +6,17 @@
   <title>Allure Makeup Studio | Luxury Beauty Salon in Punjab Society, Lahore</title>
   <meta name="description" content="Allure Makeup Studio - Premium Bridal, Dulhan, Walima & Party Makeup Studio in Punjab Housing Society, Lahore. Contact: 03220262418.">
   
-  <!-- Premium Google Fonts -->
+  <!-- Critical Resource & CDN Hints for Speed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <!-- Image Server Optimization -->
-  <link rel="preconnect" href="https://i.postimg.cc">
+  <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
   <link rel="dns-prefetch" href="https://i.postimg.cc">
 
+  <!-- Optimized Non-Blocking Font Loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* CSS RESET & VARIABLES */
+    /* CSS RESET & SPEED-OPTIMIZED STYLES */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -48,6 +48,7 @@
     body {
       overflow-x: hidden;
       line-height: 1.6;
+      content-visibility: auto;
     }
 
     a {
@@ -61,12 +62,11 @@
       display: block;
     }
 
-    /* TYPOGRAPHY OVERRIDES */
     h1, h2, h3, .nav-logo-text, .package-title {
       font-family: var(--font-heading);
     }
 
-    /* TOP BAR / QUICK ACTION BUTTONS */
+    /* TOP BAR */
     .top-action-bar {
       background: linear-gradient(90deg, #180922 0%, #2b0d32 50%, #180922 100%);
       border-bottom: 1px solid var(--border-color);
@@ -128,6 +128,7 @@
       letter-spacing: 0.5px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
+      will-change: transform;
     }
 
     .top-btn:hover {
@@ -318,6 +319,7 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       border: none;
       cursor: pointer;
+      will-change: transform;
     }
 
     .btn-primary:hover {
@@ -352,11 +354,12 @@
       overflow: hidden;
       border: 2px solid var(--border-color);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+      aspect-ratio: 4 / 3;
     }
 
     .hero-img-wrapper img {
       width: 100%;
-      height: 480px;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -378,11 +381,12 @@
       border-radius: 16px;
       overflow: hidden;
       border: 2px solid var(--border-pink);
+      aspect-ratio: 4 / 3;
     }
 
     .about-img-frame img {
       width: 100%;
-      height: 380px;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -409,7 +413,7 @@
       border: 1px solid var(--border-color);
       border-radius: 16px;
       padding: 24px;
-      transition: transform 0.3s ease, border-color 0.3s ease;
+      transition: transform 0.25s ease, border-color 0.25s ease;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -483,11 +487,12 @@
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--border-pink);
+      aspect-ratio: 4 / 3;
     }
 
     .bridal-img-wrapper img {
       width: 100%;
-      height: 420px;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -576,17 +581,19 @@
       height: 320px;
       border: 1px solid var(--border-color);
       cursor: pointer;
+      contain: content;
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.4s ease;
+      transition: transform 0.3s ease;
+      will-change: transform;
     }
 
     .gallery-item:hover img {
-      transform: scale(1.08);
+      transform: scale(1.06);
     }
 
     .gallery-overlay {
@@ -596,7 +603,7 @@
       display: flex;
       align-items: flex-end;
       padding: 20px;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
     .gallery-label {
@@ -646,7 +653,7 @@
       color: var(--pink-main);
     }
 
-    /* LOCATION SECTION */
+    /* LOCATION */
     .location-section {
       background: var(--bg-card);
       border-top: 1px solid var(--border-color);
@@ -685,7 +692,7 @@
       margin-bottom: 12px;
     }
 
-    /* BOOKING & HIGH-CONTRAST FORM FIXES */
+    /* BOOKING FORM */
     .booking-card {
       max-width: 750px;
       margin: 0 auto;
@@ -720,7 +727,6 @@
       font-weight: 600;
     }
 
-    /* Form Controls Contrast Fix */
     .form-control {
       background-color: #1f1225 !important;
       border: 1.5px solid var(--border-pink) !important;
@@ -815,7 +821,6 @@
       cursor: pointer;
     }
 
-    /* RESPONSIVE MEDIA QUERIES */
     @media (max-width: 768px) {
       .hero-grid, .about-grid, .bridal-box, .location-grid {
         grid-template-columns: 1fr;
@@ -849,17 +854,17 @@
   <div class="top-action-bar">
     <div class="top-bar-container">
       <div class="top-brand-mini">
-        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" decoding="async">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" width="34" height="34" decoding="async">
         <span class="top-brand-title">Allure Studio</span>
       </div>
       <div class="top-quick-buttons">
-        <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20inquire%20about%20booking." target="_blank" class="top-btn top-btn-wa">
+        <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20inquire%20about%20booking." target="_blank" rel="noopener" class="top-btn top-btn-wa">
           <span>💬 WhatsApp</span>
         </a>
-        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" class="top-btn top-btn-insta">
+        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" rel="noopener" class="top-btn top-btn-insta">
           <span>📸 Instagram</span>
         </a>
-        <a href="https://www.tiktok.com/@alluremakeupstudio5?_r=1&_d=f3854841a4dde3&sec_uid=MS4wLjABAAAACjKKfPFJhZ7Be_YIOBIJAutpS4iUcW9jkOAsMNEYosMX7ZWHZ6csb9-Fxec_EKAs&share_author_id=7588433932183700498&sharer_language=en&source=h5_m&u_code=egk3b4557aac13&item_author_type=2&utm_source=whatsapp_business&share_enter_from=others_homepage&tt_from=whatsapp_business&enable_checksum=1&utm_medium=ios&share_link_id=39824AC2-2C2C-4616-A742-D44A3E4BD8C4&user_id=7426343676450292737&sec_user_id=MS4wLjABAAAA-D4DlhcckdP-WSNB3zEhDBw_Tcrp6KYRPRq8U07-Auy-3eV1Jg5DZH-noMGb_2Re&utm_campaign=client_share&panel_source_v2=share_panel&ug_btm=b6880,b5836&social_share_type=5&share_app_id=1233" target="_blank" class="top-btn top-btn-tiktok">
+        <a href="https://www.tiktok.com/@alluremakeupstudio5" target="_blank" rel="noopener" class="top-btn top-btn-tiktok">
           <span>🎵 TikTok</span>
         </a>
       </div>
@@ -870,7 +875,7 @@
   <header class="main-header">
     <div class="nav-container">
       <div class="nav-logo-group">
-        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" decoding="async">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" width="45" height="45" decoding="async">
         <div class="nav-logo-text">ALLURE MAKEUP STUDIO</div>
       </div>
       <ul class="nav-links">
@@ -886,22 +891,22 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (Eager Loaded LCP Image) -->
   <section id="home" class="hero-section">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-text">
           <span class="hero-badge">Punjab Housing Society, Lahore</span>
           <h1>ELEGANCE & <span>ROYAL GLAMOUR</span></h1>
-          <p>Experience high-end professional beauty transformations. Specializing in Bridal, Dulhan, Engagement, Walima, and Luxury Party Makeups.</p>
+          <p>Experience high-end professional beauty transformations. Specializing in Bridal, Dulhan, Walima, and Luxury Party Makeups.</p>
           <div class="hero-cta-group">
             <a href="#booking" class="btn-primary">Book Appointment</a>
-            <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-secondary">Direct WhatsApp</a>
+            <a href="https://wa.me/923220262418?text=Hello%20Allure%20Makeup%20Studio,%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn-secondary">Direct WhatsApp</a>
           </div>
         </div>
         <div class="hero-img-box">
           <div class="hero-img-wrapper">
-            <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Professional Beauty Parlor Makeup Showcase" fetchpriority="high" loading="eager" decoding="async">
+            <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Bridal Makeup Transformation" fetchpriority="high" loading="eager" decoding="async" width="600" height="450">
           </div>
         </div>
       </div>
@@ -913,7 +918,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-img-frame">
-          <img src="https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg" alt="Timeless Beauty Salon Ambience" loading="lazy" decoding="async">
+          <img src="https://i.postimg.cc/brghGWc1/Whats-App-Image-2026-09-18-at-3-06-28-PM-(1).jpg" alt="Allure Makeup Transformation Look" loading="lazy" decoding="async" width="600" height="450">
         </div>
         <div class="about-content">
           <div class="section-title" style="text-align: left;">
@@ -921,8 +926,8 @@
             <div class="gold-divider" style="margin-left: 0;"></div>
           </div>
           <h3>Crafting Timeless Beauty</h3>
-          <p>At <strong>Allure Makeup Studio</strong>, we are dedicated to providing a luxurious beauty experience for every client. Located in Punjab Housing Society, Lahore, our salon blends modern aesthetics with traditional elegance.</p>
-          <p>From modern HD airbrush bridal looks to soft glam party makeups and premium skincare routines, we use top-tier global beauty products to ensure you look flawless on your special day.</p>
+          <p>At <strong>Allure Makeup Studio</strong>, we are dedicated to providing a luxurious beauty experience for every client. Located in Punjab Housing Society, Lahore, our studio blends modern aesthetics with traditional elegance.</p>
+          <p>From modern HD airbrush bridal looks to soft glam party makeups and signature beauty routines, we ensure you look flawless on your special day.</p>
           <a href="#booking" class="btn-primary" style="margin-top: 10px;">Visit Us Today</a>
         </div>
       </div>
@@ -947,7 +952,7 @@
         <div class="service-card">
           <div class="service-icon">👑</div>
           <h3>Dulhan Makeup</h3>
-          <p>Traditional royal barat bridal transformation with long-lasting flawless finish.</p>
+          <p>Traditional royal dulhan transformation with long-lasting flawless finish.</p>
           <button onclick="bookService('Dulhan Makeup')" class="service-btn">Book Service</button>
         </div>
         <div class="service-card">
@@ -955,18 +960,6 @@
           <h3>Walima Makeup</h3>
           <p>Soft pastel elegance with high-definition glow finish for your Walima event.</p>
           <button onclick="bookService('Walima Makeup')" class="service-btn">Book Service</button>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">💍</div>
-          <h3>Engagement Makeup</h3>
-          <p>Subtle, modern, and glowing makeup tailored for engagement & ring ceremony.</p>
-          <button onclick="bookService('Engagement Makeup')" class="service-btn">Book Service</button>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">💄</div>
-          <h3>Party Makeup</h3>
-          <p>Glamorous party looks with custom eye makeup, lashes, and hair styling.</p>
-          <button onclick="bookService('Party Makeup')" class="service-btn">Book Service</button>
         </div>
         <div class="service-card">
           <div class="service-icon">💇‍♀️</div>
@@ -995,12 +988,12 @@
     <div class="container">
       <div class="bridal-box">
         <div class="bridal-img-wrapper">
-          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Signature Red Dulhan Bridal Makeup" loading="lazy" decoding="async">
+          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Signature Red Dulhan Bridal Makeup" loading="lazy" decoding="async" width="600" height="450">
         </div>
         <div class="bridal-info">
           <h3>SIGNATURE BRIDAL & DULHAN GLAM</h3>
           <p>Your wedding day deserves nothing less than perfection. Our signature Dulhan package combines HD airbrush techniques, customized mink lashes, skin glow treatments, and expert hairstyle setting to ensure you feel like royalty.</p>
-          <a href="https://wa.me/923220262418?text=Hello%20Allure%20Studio,%20I%20want%20to%20inquire%20about%20Bridal%20Consultation." target="_blank" class="btn-primary">Inquire via WhatsApp</a>
+          <a href="https://wa.me/923220262418?text=Hello%20Allure%20Studio,%20I%20want%20to%20inquire%20about%20Bridal%20Consultation." target="_blank" rel="noopener" class="btn-primary">Inquire via WhatsApp</a>
         </div>
       </div>
     </div>
@@ -1029,8 +1022,8 @@
           <span class="package-badge">Most Popular</span>
           <h3 class="package-title">Signature Dulhan Package</h3>
           <ul class="package-features">
-            <li>✔ High Definition Barat Makeup</li>
-            <li>✔ Royal Hair Design</li>
+            <li>✔ High Definition Dulhan Makeup</li>
+            <li>✔ Royal Hair Design & Curly Hair</li>
             <li>✔ Pre-Bridal Skin Prep</li>
             <li>✔ Complete Jewelry & Dupatta Setting</li>
             <li>✔ Free Touch-up Kit</li>
@@ -1038,82 +1031,109 @@
           <button onclick="bookService('Signature Dulhan Package')" class="btn-primary" style="width: 100%;">Book Package</button>
         </div>
         <div class="package-card">
-          <h3 class="package-title">Walima / Engagement</h3>
+          <h3 class="package-title">Walima Package</h3>
           <ul class="package-features">
             <li>✔ Soft Glow Pastel Makeup</li>
             <li>✔ Luxury Lash Application</li>
             <li>✔ Romantic Updo Hair Styling</li>
             <li>✔ Dupatta & Crown Setting</li>
           </ul>
-          <button onclick="bookService('Walima/Engagement Package')" class="btn-primary" style="width: 100%;">Book Package</button>
+          <button onclick="bookService('Walima Package')" class="btn-primary" style="width: 100%;">Book Package</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY SECTION -->
+  <!-- GALLERY SECTION (Lazy Loaded Images) -->
   <section id="gallery" class="section-padding" style="background: var(--bg-card);">
     <div class="container">
       <div class="section-title">
         <h2>STUDIO <span>GALLERY</span></h2>
-        <p>Explore transformations crafted at Allure Makeup Studio</p>
+        <p>Explore professional beauty transformations crafted at Allure Makeup Studio</p>
         <div class="gold-divider"></div>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg')">
-          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Signature Dulhan" loading="lazy" decoding="async">
-          <div class="gallery-overlay">
-            <div>
-              <div class="gallery-label">BARAT GLAM</div>
-              <div class="gallery-title">Signature Barat Dulhan</div>
-            </div>
-          </div>
-        </div>
+        
         <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg')">
-          <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Bridal Glam" loading="lazy" decoding="async">
+          <img src="https://i.postimg.cc/YCdBc3Vy/Whats-App-Image-2026-09-17-at-10-28-11-PM-(1).jpg" alt="Bridal Makeup Look" loading="lazy" decoding="async" width="400" height="320">
           <div class="gallery-overlay">
             <div>
-              <div class="gallery-label">BRIDAL</div>
+              <div class="gallery-label">BRIDAL MAKEUP</div>
               <div class="gallery-title">Luxury Bridal Look</div>
             </div>
           </div>
         </div>
+
         <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/3r2Mr7Vp/Whats-App-Image-2026-09-17-at-10-28-11-PM.jpg')">
-          <img src="https://i.postimg.cc/3r2Mr7Vp/Whats-App-Image-2026-09-17-at-10-28-11-PM.jpg" alt="Walima Bride" loading="lazy" decoding="async">
+          <img src="https://i.postimg.cc/3r2Mr7Vp/Whats-App-Image-2026-09-17-at-10-28-11-PM.jpg" alt="Walima Makeup Look" loading="lazy" decoding="async" width="400" height="320">
           <div class="gallery-overlay">
             <div>
-              <div class="gallery-label">WALIMA</div>
+              <div class="gallery-label">WALIMA MAKEUP</div>
               <div class="gallery-title">Royal Walima Elegance</div>
             </div>
           </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg')">
-          <img src="https://i.postimg.cc/dQTtj3nT/Whats-App-Image-2026-09-17-at-4-02-37-PM.jpg" alt="Engagement Glam" loading="lazy" decoding="async">
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/QdB2sHtm/Whats-App-Image-2026-09-18-at-3-06-29-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/QdB2sHtm/Whats-App-Image-2026-09-18-at-3-06-29-PM-(1).jpg" alt="Walima Soft Makeup" loading="lazy" decoding="async" width="400" height="320">
           <div class="gallery-overlay">
             <div>
-              <div class="gallery-label">ENGAGEMENT</div>
-              <div class="gallery-title">Engagement Glow</div>
+              <div class="gallery-label">WALIMA MAKEUP</div>
+              <div class="gallery-title">Pastel Soft Walima Glam</div>
             </div>
           </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/nhrWqjGc/Whats-App-Image-2026-09-17-at-4-02-40-PM-(1).jpg')">
-          <img src="https://i.postimg.cc/nhrWqjGc/Whats-App-Image-2026-09-17-at-4-02-40-PM-(1).jpg" alt="Party Makeup" loading="lazy" decoding="async">
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg')">
+          <img src="https://i.postimg.cc/284CtnrL/Whats-App-Image-2026-09-17-at-10-28-11-PM-(2).jpg" alt="Bridal Glam " loading="lazy" decoding="async" width="400" height="320">
           <div class="gallery-overlay">
             <div>
-              <div class="gallery-label">PARTY GLAM</div>
-              <div class="gallery-title">Soft Glam Party Look</div>
+              <div class="gallery-label">CURLY HAIR</div>
+              <div class="gallery-title">Signature Curly Hair Look</div>
             </div>
           </div>
         </div>
-        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/9f7CtNYH/Whats-App-Image-2026-09-17-at-4-02-39-PM-(1).jpg')">
-          <img src="https://i.postimg.cc/9f7CtNYH/Whats-App-Image-2026-09-17-at-4-02-39-PM-(1).jpg" alt="Studio Showcase" loading="lazy" decoding="async">
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/bvnf0sfJ/Whats-App-Image-2026-09-18-at-3-06-29-PM.jpg')">
+          <img src="https://i.postimg.cc/bvnf0sfJ/Whats-App-Image-2026-09-18-at-3-06-29-PM.jpg" alt="Curly Hair Styling" loading="lazy" decoding="async" width="400" height="320">
           <div class="gallery-overlay">
             <div>
-              <div class="gallery-label">PORTFOLIO</div>
-              <div class="gallery-title">Studio Detail Portfolio</div>
+              <div class="gallery-label">CURLY HAIR</div>
+              <div class="gallery-title">Traditional Curly Hair Style</div>
             </div>
           </div>
         </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/D0kZQtNv/Whats-App-Image-2026-09-18-at-3-06-27-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/D0kZQtNv/Whats-App-Image-2026-09-18-at-3-06-27-PM-(1).jpg" alt="Mehndi Event Makeup" loading="lazy" decoding="async" width="400" height="320">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">MEHNDI MAKEUP</div>
+              <div class="gallery-title">Vibrant Mehndi Look</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/pd3XxwR5/Whats-App-Image-2026-09-18-at-3-06-28-PM.jpg')">
+          <img src="https://i.postimg.cc/pd3XxwR5/Whats-App-Image-2026-09-18-at-3-06-28-PM.jpg" alt="Bridal Makeup Look" loading="lazy" decoding="async" width="400" height="320">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">PARTY MAKEUP</div>
+              <div class="gallery-title">Chic Party Glam</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('https://i.postimg.cc/brghGWc1/Whats-App-Image-2026-09-18-at-3-06-28-PM-(1).jpg')">
+          <img src="https://i.postimg.cc/brghGWc1/Whats-App-Image-2026-09-18-at-3-06-28-PM-(1).jpg" alt="HD Signature Glam Makeup" loading="lazy" decoding="async" width="400" height="320">
+          <div class="gallery-overlay">
+            <div>
+              <div class="gallery-label">GLAM MAKEUP</div>
+              <div class="gallery-title">High Definition Signature Glam</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1129,7 +1149,7 @@
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"My Barat look was beyond my expectations! Everyone at the hall complimented my makeup. Thank you Allure Studio!"</p>
+          <p class="review-text">"My Dulhan look was beyond my expectations! Everyone at the hall complimented my makeup. Thank you Allure Studio!"</p>
           <div class="review-author">- Ayesha Khan</div>
         </div>
         <div class="review-card">
@@ -1163,7 +1183,7 @@
           <p><strong>Studio Address:</strong> Punjab Housing Society, Ghazi Road, Lahore, Punjab, Pakistan.</p>
           <p><strong>Phone / WhatsApp:</strong> 03220262418</p>
           <p><strong>Timing:</strong> Open 7 Days a Week (11:00 AM - 8:00 PM)</p>
-          <a href="https://maps.app.goo.gl/3gqcwCBCBekL1VaT7?g_st=ac" target="_blank" class="btn-primary" style="margin-top: 15px;">
+          <a href="https://maps.app.goo.gl/3gqcwCBCBekL1VaT7?g_st=ac" target="_blank" rel="noopener" class="btn-primary" style="margin-top: 15px;">
             📍 Open Direct Location Link
           </a>
         </div>
@@ -1183,36 +1203,35 @@
         <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
           <div class="form-grid">
             <div class="form-group">
-              <label>Full Name</label>
+              <label for="custName">Full Name</label>
               <input type="text" id="custName" class="form-control" placeholder="Enter Your Name" required>
             </div>
             <div class="form-group">
-              <label>Phone Number</label>
+              <label for="custPhone">Phone Number</label>
               <input type="tel" id="custPhone" class="form-control" placeholder="03XXXXXXXXX" required>
             </div>
             <div class="form-group">
-              <label>Date of Event</label>
+              <label for="custDate">Date of Event</label>
               <input type="date" id="custDate" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Service Required</label>
+              <label for="custService">Service Required</label>
               <select id="custService" class="form-control" required>
                 <option value="Bridal Makeup">Bridal Makeup</option>
                 <option value="Dulhan Makeup">Dulhan Makeup</option>
                 <option value="Walima Makeup">Walima Makeup</option>
-                <option value="Engagement Makeup">Engagement Makeup</option>
                 <option value="Party Makeup">Party Makeup</option>
-                <option value="Hair Styling">Hair Styling</option>
+                <option value="Hair Styling & Curly Hair">Hair Styling & Curly Hair</option>
                 <option value="Skin Care Treatment">Skin Care Treatment</option>
                 <option value="Other Service">Other Beauty Service</option>
               </select>
             </div>
             <div class="form-group full-width">
-              <label>Number of People</label>
+              <label for="custPeople">Number of People</label>
               <input type="number" id="custPeople" class="form-control" placeholder="1" min="1" value="1">
             </div>
             <div class="form-group full-width">
-              <label>Additional Message / Details</label>
+              <label for="custMsg">Additional Message / Details</label>
               <textarea id="custMsg" class="form-control" rows="3" placeholder="Mention timing preference or special requirements..."></textarea>
             </div>
             <div class="form-group full-width" style="margin-top: 10px;">
@@ -1230,15 +1249,15 @@
   <footer>
     <div class="container">
       <div class="footer-logo">
-        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" loading="lazy" decoding="async">
+        <img src="https://i.postimg.cc/26k8x7cL/Whats-App-Image-2026-09-14-at-5-35-09-PM.jpg" alt="Allure Logo" loading="lazy" decoding="async" width="50" height="50">
         <h3>ALLURE MAKEUP STUDIO</h3>
       </div>
       <p style="color: var(--text-muted); margin-bottom: 20px;">Punjab Housing Society, Ghazi Road, Lahore | Contact: 03220262418</p>
       
       <div class="footer-socials">
-        <a href="https://wa.me/923220262418" target="_blank" class="top-btn top-btn-wa">WhatsApp</a>
-        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" class="top-btn top-btn-insta">Instagram</a>
-        <a href="https://www.tiktok.com/@alluremakeupstudio5?_r=1&_d=f3854841a4dde3&sec_uid=MS4wLjABAAAACjKKfPFJhZ7Be_YIOBIJAutpS4iUcW9jkOAsMNEYosMX7ZWHZ6csb9-Fxec_EKAs&share_author_id=7588433932183700498&sharer_language=en&source=h5_m&u_code=egk3b4557aac13&item_author_type=2&utm_source=whatsapp_business&share_enter_from=others_homepage&tt_from=whatsapp_business&enable_checksum=1&utm_medium=ios&share_link_id=39824AC2-2C2C-4616-A742-D44A3E4BD8C4&user_id=7426343676450292737&sec_user_id=MS4wLjABAAAA-D4DlhcckdP-WSNB3zEhDBw_Tcrp6KYRPRq8U07-Auy-3eV1Jg5DZH-noMGb_2Re&utm_campaign=client_share&panel_source_v2=share_panel&ug_btm=b6880,b5836&social_share_type=5&share_app_id=1233" target="_blank" class="top-btn top-btn-tiktok">TikTok</a>
+        <a href="https://wa.me/923220262418" target="_blank" rel="noopener" class="top-btn top-btn-wa">WhatsApp</a>
+        <a href="https://www.instagram.com/_alluremakeupstudio1?stkn=enVsYmlnaGdiMGFt&utm_source=qr" target="_blank" rel="noopener" class="top-btn top-btn-insta">Instagram</a>
+        <a href="https://www.tiktok.com/@alluremakeupstudio5" target="_blank" rel="noopener" class="top-btn top-btn-tiktok">TikTok</a>
       </div>
 
       <div class="copyright">
@@ -1253,7 +1272,7 @@
     <img id="lightboxImg" class="lightbox-content" src="" alt="Gallery Preview">
   </div>
 
-  <!-- JAVASCRIPT LOGIC -->
+  <!-- LIGHTWEIGHT JAVASCRIPT -->
   <script>
     function bookService(serviceName) {
       document.getElementById('custService').value = serviceName;
@@ -1287,10 +1306,7 @@
                  "*Number of Persons:* " + encodeURIComponent(people) + "%0A" +
                  "*Message:* " + encodeURIComponent(msg || "N/A");
 
-      var waNum = "923220262418";
-      var waUrl = "https://wa.me/" + waNum + "?text=" + text;
-
-      window.open(waUrl, '_blank');
+      window.open("https://wa.me/923220262418?text=" + text, '_blank');
     }
   </script>
 </body>
